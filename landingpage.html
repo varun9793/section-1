@@ -1,65 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>landing page</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" rel="stylesheet" />
+    <title>Landing Page</title>
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic"
+        rel="stylesheet" />
+
     <style>
-        *{
-            font-family: lato;
+        * {
+            font-family: Lato;
         }
-        
-        .hero-section{
+
+        .hero-section {
+
+            height: 40vh;
+
             display: flex;
-            height: 60vh;
-            border: 2px solid rgb(232, 146, 146);
             flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: 20px;
-            background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.374) , rgba(255, 255, 255, 0.741) ), url(https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg);
-            opacity: 0.7;
+
+            padding: 0 50px;
+            background-image: linear-gradient( 90deg, #91ffe34f, #ffffffc8, #91ffe34f ), url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk4Ni1iZy0wMi1rcWhlM3dpdC5qcGc.jpg');
+            background-position: top;
+            margin: 10px;
+            border-radius: 5%;
         }
 
-        .hero-title{
+        .hero-title {
             font-size: 40px;
             font-weight: bold;
             margin: 0;
-            color: black;
         }
 
-        .hero-subtitle{
+        .hero-subtitle {
             margin: 0;
-            color: black;
         }
-        
-        .btn{
-            background-color: rgb(0, 0, 0);
+        .hero-btn{
+            background-color: black;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
             border: none;
         }
 
+        .feature-section{
+            padding: 50px 100px;
+            height: auto;
+            align-items: center;
+            border-radius: 10%;
+            margin: 10px;
+            border: 2px solid pink;
+        
+        }
+        .card{
+            background-color: rgb(183, 228, 213);
+            border-radius: 5%;
+            box-shadow: 2px 2px 2px 2px black;
+            text-align: center;
+            padding: 30px;
+            justify-content: center;
+            width: 20%;
+          
+        }
+        .card-container{
+            display: flex;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        .section-title{
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .service-section{
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            padding: 50px 100px;
+
+        }
+
+        .service-image{
+            border: 2px solid red;
+        }
+
+        .service-info{
+            border: 2px solid green;
+        }
+
+        .image{
+            width: auto;
+        }
+
+        .btn{
+            background-color: white;
+            padding: 10px;
+            border: 2px solid blueviolet;
+            font-size: 1.1em;
+            border-radius: 50%;
+        }
+
     </style>
 </head>
-<style>
 
-</style>
 <body>
-    
-<main>
 
-    <article>
-        <section class="hero-section">
-            <h1 class="hero-title">Welcome to the site</h1>
-            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet assumenda vitae deserunt quis, earum laborum officia perferendis commodi modi rem.</p>
-            <button class="btn">Explore</button>
-        </section>
-    </article>
+    <main>
 
-</main>
+        <article>
+
+            <section class="hero-section">
+                <h1 class="hero-title">Welcome to the Site</h1>
+                <p class="hero-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, a deserunt
+                    doloribus ipsa quo
+                    repellat laboriosam autem tempora consequatur accusantium!</p>
+
+                <button class="hero-btn">Explore</button>
+
+            </section>
+
+            <section class="feature-section">
+                <h2 class="section-title">Our Features</h2>
+                <div class="card-container">
+                    <div class="card">
+                        <h3>name</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, asperiores!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Feature</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, asperiores!</p>
+                    </div>
+                    <div class="card">
+                        <h3>adrress</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, asperiores!</p>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="service-section">
+
+                <div class="service-image">
+                    huguygyu
+                    <!-- <img class="image" src="./piano-pic-3.jpg" alt="piano"> -->
+
+                </div>
+
+                <div class="service-info">
+                    <h3>"service-title1"</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, soluta!</p>
+                    <button class="btn">learn more</button>
+                </div>
+
+            </section>
+
+        </article>
+
+    </main>
 
 </body>
+
 </html>
